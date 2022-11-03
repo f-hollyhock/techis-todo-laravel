@@ -6,7 +6,7 @@
 <div class="panel-body">
     <!-- バリデーションエラーの表示 -->
     @include('common.errors')
- 
+    
     <!-- 新タスクフォーム -->
     <form action="{{ url('task') }}" method="POST" class="form-horizontal">
         {{ csrf_field() }}
@@ -29,6 +29,8 @@
             </div>
         </div>
     </form>
+
+
 </div>
  
 <!-- タスク一覧表示 -->
